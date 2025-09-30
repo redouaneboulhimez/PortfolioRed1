@@ -69,7 +69,16 @@ function App() {
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
       <header className={`sticky top-0 z-50 backdrop-blur border-b border-gray-200 bg-white/70 transition-transform ${navHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <a href="#home" className="text-lg font-semibold">Redouane Boulhimez</a>
+          <motion.a 
+            href="#home" 
+            className="group cursor-pointer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:shadow-xl transition-all duration-300 group-hover:rotate-12">
+              RB
+            </div>
+          </motion.a>
           <ul className="flex gap-5 text-sm">
             <li><a href="#skills" className={`relative pb-1 ${activeId==='skills'?'text-blue-600 font-medium':'hover:text-blue-600'} after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 ${activeId==='skills'?'after:w-full':''}`}>Compétences</a></li>
             <li><a href="#projects" className={`relative pb-1 ${activeId==='projects'?'text-blue-600 font-medium':'hover:text-blue-600'} after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 ${activeId==='projects'?'after:w-full':''}`}>Projets</a></li>
