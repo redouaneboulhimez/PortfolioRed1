@@ -1028,26 +1028,30 @@ function App() {
                   e.preventDefault();
                   const form = e.target as HTMLFormElement;
                   const formData = new FormData(form);
-                  const payload = {
-                    name: String(formData.get('name') || ''),
-                    email: String(formData.get('email') || ''),
-                    message: String(formData.get('message') || ''),
-                  };
+                  
                   try {
-                    const endpoint = (import.meta as any).env.VITE_CONTACT_ENDPOINT || 'http://localhost/contact.php';
-                    const res = await fetch(endpoint, {
+                    const res = await fetch('https://api.web3forms.com/submit', {
                       method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify(payload),
+                      body: formData,
                     });
                     const json = await res.json();
-                    alert(json.ok ? 'Message envoyé avec succès !' : 'Erreur: ' + (json.error || ''));
-                    if (json.ok) form.reset();
+                    
+                    if (json.success) {
+                      alert('✅ Message envoyé avec succès ! Je vous répondrai bientôt.');
+                      form.reset();
+                    } else {
+                      alert('❌ Erreur lors de l\'envoi. Veuillez réessayer.');
+                    }
                   } catch (err) {
-                    alert('Erreur réseau. Veuillez réessayer.');
+                    alert('❌ Erreur réseau. Veuillez vérifier votre connexion et réessayer.');
                   }
                 }}
               >
+                {/* Web3Forms Access Key - Replace with your own key from https://web3forms.com */}
+                <input type="hidden" name="access_key" value="8d7271a6-7efe-4260-b7bd-6dd1638a3286" />
+                <input type="hidden" name="subject" value="Nouveau message depuis le portfolio" />
+                <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
