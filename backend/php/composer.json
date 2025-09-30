@@ -1,0 +1,14 @@
+{
+  "name": "redouane/portfolio-backend",
+  "description": "PHP backend for contact form using PHPMailer",
+  "type": "project",
+  "require": {
+    "php": ">=8.0",
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
