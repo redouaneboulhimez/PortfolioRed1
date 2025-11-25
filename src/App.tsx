@@ -122,7 +122,7 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                Full-Stack Developer & AI Enthusiast
+                Étudiant MIAGE — Développement | IA | Cybersécurité
               </motion.p>
               <motion.div 
                 className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 border border-green-200 text-green-700 text-sm font-medium"
@@ -150,7 +150,7 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
               >
-                Passionné par le développement web et l'intelligence artificielle, je crée des solutions innovantes qui combinent technologies modernes et intelligence artificielle pour résoudre des problèmes complexes.
+                Étudiant MIAGE passionné par le développement logiciel, l'IA appliquée et la cybersécurité. Je combine les compétences MIAGE (modélisation, gestion SI, analyse métier) avec une expertise technique dans le développement web, l'automatisation, l'analyse de code, la sécurité informatique et les technologies Cloud/DevOps. Mon objectif : contribuer à la création de solutions innovantes, sécurisées et intelligentes.
               </motion.p>
               <motion.div 
                 className="mt-8 flex flex-wrap gap-4"
@@ -167,7 +167,7 @@ function App() {
                   Me Contacter
                 </motion.a>
                 <motion.a 
-                  href="/Copie de Redouane Boulhimez _ LinkedIn (1).pdf" 
+                  href="/cv.pdf" 
                   download
                   className="flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl"
                   whileHover={{ scale: 1.05 }}
@@ -213,25 +213,22 @@ function App() {
 
         <motion.section id="skills" className="mx-auto max-w-6xl px-4 py-16" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }}>
           <motion.h2 className="text-2xl font-semibold" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
-            Compétences
+            Compétences MIAGE + Tech
           </motion.h2>
-          <motion.div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+          <motion.div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+            {/* 🔹 Développement */}
             <motion.div className="group relative rounded-lg border p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
               <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
-              <h3 className="font-medium flex items-center gap-2">
-                <span className="text-lg">🔧</span>
-                Développement
-              </h3>
-              <p className="mt-2 text-gray-600 text-sm">Python, Java, Spring Boot, Django, React, Angular</p>
+                <h3 className="font-medium flex items-center gap-2">
+                  <span className="text-lg">💻</span>
+                  Développement
+                </h3>
+                <p className="mt-2 text-gray-600 text-sm">Java, Spring Boot, React, APIs REST, Git, CI/CD</p>
               </div>
               <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
-                <div className="w-[360px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-3">
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Python</span>
-                    </div>
+                <div className="w-[400px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
+                  <div className="grid grid-cols-2 gap-3">
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
                       <img src="https://cdn.simpleicons.org/java/ED8B00" alt="Java" className="h-5 w-5" onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://cdn.simpleicons.org/openjdk/000000'; }} />
                       <span className="text-sm text-gray-700">Java</span>
@@ -241,142 +238,120 @@ function App() {
                       <span className="text-sm text-gray-700">Spring Boot</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/django/092E20" alt="Django" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Django</span>
-                    </div>
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
                       <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="h-5 w-5" />
                       <span className="text-sm text-gray-700">React</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/angular/DD0031" alt="Angular" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Angular</span>
+                      <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">Tailwind CSS</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">Vite</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">MySQL</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.simpleicons.org/sqlite/003B57" alt="SQLite" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">SQLite</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">Git</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">APIs REST</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">Architecture MVC</span>
                     </div>
                   </div>
                 </div>
               </div>
             </motion.div>
+
+            {/* 🔹 Intelligence Artificielle */}
             <motion.div className="group relative rounded-lg border p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}>
-              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="absolute inset-0 rounded-lg bg-purple-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
-              <h3 className="font-medium flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="DevOps" className="h-5 w-5" />
-                DevOps
-              </h3>
-              <p className="mt-2 text-gray-600 text-sm">Docker, Kubernetes, CI/CD</p>
+                <h3 className="font-medium flex items-center gap-2">
+                  <span className="text-lg">🤖</span>
+                  Intelligence Artificielle
+                </h3>
+                <p className="mt-2 text-gray-600 text-sm">Python, Keras, TensorFlow, Deep Learning, IA générative</p>
               </div>
               <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
-                <div className="w-[360px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-3">
-                  <div className="grid grid-cols-3 gap-3">
+                <div className="w-[400px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
+                  <div className="grid grid-cols-2 gap-3">
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Docker</span>
+                      <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">Python</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">Keras</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">TensorFlow</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">Deep Learning</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">Réseaux de neurones</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">IA générative (GPT)</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <span className="text-sm text-gray-700">Analyse automatisée</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* 🔹 Cybersécurité & Systèmes */}
+            <motion.div className="group relative rounded-lg border p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }}>
+              <div className="absolute inset-0 rounded-lg bg-red-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="relative z-10">
+                <h3 className="font-medium flex items-center gap-2">
+                  <span className="text-lg">🔐</span>
+                  Cybersécurité & Systèmes
+                </h3>
+                <p className="mt-2 text-gray-600 text-sm">VMware ESXi, Azure, Kubernetes, Sécurité réseau</p>
+              </div>
+              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
+                <div className="w-[400px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.simpleicons.org/vmware/607078" alt="VMware ESXi" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">VMware ESXi</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.simpleicons.org/ubuntu/E95420" alt="Ubuntu" className="h-5 w-5" />
+                      <span className="text-sm text-gray-700">Ubuntu</span>
+                    </div>
+                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
+                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/microsoftazure.svg" alt="Azure" className="h-5 w-5" onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjMDA3OEM0Ii8+Cjwvc3ZnPgo='; }} />
+                      <span className="text-sm text-gray-700">Azure Cloud</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
                       <img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" className="h-5 w-5" />
                       <span className="text-sm text-gray-700">Kubernetes</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">GitHub Actions</span>
+                      <span className="text-sm text-gray-700">MicroK8s</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/jenkins/D24939" alt="Jenkins" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Jenkins</span>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div className="group relative rounded-lg border p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }}>
-              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
-              <div className="relative z-10">
-              <h3 className="font-medium flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="Bases de données" className="h-5 w-5" />
-                Bases de données
-              </h3>
-              <p className="mt-2 text-gray-600 text-sm">MySQL, PostgreSQL</p>
-              </div>
-              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
-                <div className="w-[360px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-3">
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">MySQL</span>
+                      <span className="text-sm text-gray-700">Traefik</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">PostgreSQL</span>
-                    </div>
-                    
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/sqlite/003B57" alt="SQLite" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">SQLite</span>
-                    </div>
-                    
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/prisma/2D3748" alt="Prisma" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Prisma</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div className="group relative rounded-lg border p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }}>
-              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
-              <div className="relative z-10">
-              <h3 className="font-medium flex items-center gap-2">
-                <img src="https://cdn.simpleicons.org/git/F05032" alt="Outils" className="h-5 w-5" />
-                Outils
-              </h3>
-              <p className="mt-2 text-gray-600 text-sm">Git, Linux, Cloud</p>
-              </div>
-
-              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
-                <div className="w-[360px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-3">
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Git</span>
+                      <span className="text-sm text-gray-700">Sécurité réseau</span>
                     </div>
                     <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/linux/000000" alt="Linux" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Linux</span>
-                    </div>
-                    
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">GitHub</span>
-                    </div>
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">Docker</span>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div className="group relative rounded-lg border p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.7 }}>
-              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
-              <div className="relative z-10">
-              <h3 className="font-medium flex items-center gap-2">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/microsoftazure.svg" alt="Cloud" className="h-5 w-5" onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjMDA3OEM0Ii8+Cjwvc3ZnPgo='; }} />
-                Cloud
-              </h3>
-              <p className="mt-2 text-gray-600 text-sm">Azure, VMware ESXi</p>
-              </div>
-              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
-                <div className="w-[360px] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-3">
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/microsoftazure.svg" alt="Azure" className="h-5 w-5" onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjMDA3OEM0Ii8+Cjwvc3ZnPgo='; }} />
-                      <span className="text-sm text-gray-700">Azure</span>
-                    </div>
-                    <div className="flex items-center gap-2 rounded-md px-2 py-2 hover:bg-gray-50">
-                      <img src="https://cdn.simpleicons.org/vmware/607078" alt="VMware ESXi" className="h-5 w-5" />
-                      <span className="text-sm text-gray-700">VMware ESXi</span>
+                      <span className="text-sm text-gray-700">OWASP</span>
                     </div>
                   </div>
                 </div>
@@ -389,61 +364,16 @@ function App() {
           <motion.h2 className="text-2xl font-semibold" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
             Projets
           </motion.h2>
-          <motion.ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+
+          {/* Catégorie : IA & Dev */}
+          <motion.div className="mt-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">🤖 IA & Développement</h3>
+            <motion.ul className="grid grid-cols-1 md:grid-cols-2 gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }}>
             <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
               <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
-              <h3 className="font-medium">Système de gestion et affichage d'actualités par agences</h3>
-              <p className="text-gray-600 text-sm mt-2">Projet académique.</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Python</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Django</span>
-                <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">SQLite</span>
-                <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">HTML/CSS</span>
-              </div>
-              </div>
-              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
-                <div className="w-[900px] max-w-[95vw] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="text-sm font-semibold">Aperçu</h4>
-                      <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
-                        <li>Application de gestion et d’affichage des actualités des agences Redal (Agdal, Ryad, Hassan)</li>
-                        <li>Deux modules&nbsp;:</li>
-                        <li>Module client (kiosques)&nbsp;: consultation des actualités selon l’agence sélectionnée</li>
-                        <li>Module administrateur (back‑office)&nbsp;: gestion des clients, agences et actualités (ajout, modification, suppression)</li>
-                        <li>Authentification et inscription sécurisées avec formulaires personnalisés</li>
-                        <li>Gestion des médias&nbsp;: affichage des actualités avec images associées</li>
-                        <li>Interface réactive et conviviale, adaptée aux différents supports</li>
-                        <li>Base de données SQLite intégrée à Django (Python)</li>
-                        <li>Diagrammes UML&nbsp;: cas d’utilisation, classes, séquences (authentification, inscription)</li>
-                        <li>Tests fonctionnels (navigation, affichage, gestion CRUD des actualités/agences)</li>
-                        <li>Documentation complète et gestion du projet versionnée avec Git</li>
-                      </ul>
-                    </div>
-                    <div className="md:border-l md:pl-4 relative flex items-center justify-center">
-                      <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} spaceBetween={12} slidesPerView={1} className="w-full max-w-md">
-                          <SwiperSlide>
-                            <img src="/Screenshot 2024-09-14 130228.png" alt="Redal screenshot 1" className="w-full h-80 object-contain rounded" />
-                          </SwiperSlide>
-                          <SwiperSlide>
-                            <img src="/Screenshot 2024-09-14 125831.png" alt="Redal screenshot 2" className="w-full h-80 object-contain rounded" />
-                          </SwiperSlide>
-                          <SwiperSlide>
-                            <img src="/Screenshot 2024-09-14 125952.png" alt="Redal screenshot 3" className="w-full h-80 object-contain rounded" />
-                          </SwiperSlide>
-                      </Swiper>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.li>
-            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}>
-              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
-              <div className="relative z-10">
-              <h3 className="font-medium">Code Quality Analyser with AI</h3>
-              <p className="text-gray-600 text-sm mt-2">Analyse qualité de code .</p>
+              <h3 className="font-medium">Code Quality Analyser (JavaFX + IA)</h3>
+              <p className="text-gray-600 text-sm mt-2">Projet MIAGE : Analyse qualité de code avec IA</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">React</span>
                 <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Tailwind CSS</span>
@@ -457,13 +387,13 @@ function App() {
                     <div>
                       <h4 className="text-sm font-semibold">Aperçu</h4>
                       <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
-                        <li>Application d’analyse de la qualité du code multi‑langages</li>
+                        <li>Projet MIAGE parfait : analyse statique de code multi‑langages</li>
                         <li>Analyse Java, C/C++, Python, JavaScript, HTML, CSS</li>
-                        <li>Analyse statique avec Semgrep et Pylint (bugs, vulnérabilités, mauvaises pratiques)</li>
-                        <li>Suggestions de refactoring via modèles (ChatGPT, CodeBERT)</li>
-                        <li>Indicateurs: complexité, couverture tests, conventions, redondances, performances</li>
-                        <li>Rapports PDF et HTML clairs et personnalisés</li>
-                        <li>UI dynamique avec React + Tailwind CSS</li>
+                        <li>Détection automatique de bugs, vulnérabilités et mauvaises pratiques (Semgrep, Pylint)</li>
+                        <li>Suggestions de refactoring intelligentes via IA (GPT, CodeBERT)</li>
+                        <li>Interface ergonomique en JavaFX avec génération de rapports PDF/HTML</li>
+                        <li>Indicateurs qualité : complexité, couverture tests, conventions, redondances, performances</li>
+                        <li>Montre analyse, développement, gestion qualité - essence du profil MIAGE</li>
                         <li>Jeux de test et scénarios de validation</li>
                         <li>Documentation complète et gestion projet via Git</li>
                       </ul>
@@ -486,11 +416,18 @@ function App() {
                 </div>
               </div>
             </motion.li>
-            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }}>
+            </motion.ul>
+          </motion.div>
+
+          {/* Catégorie : Cybersécurité / Cloud / Infra */}
+          <motion.div className="mt-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }}>
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">🔐 Cybersécurité & Cloud</h3>
+            <motion.ul className="grid grid-cols-1 md:grid-cols-2 gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.5 }}>
+            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }}>
               <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
-              <h3 className="font-medium">DevOps • Kubernetes Microservices</h3>
-              <p className="text-gray-600 text-sm mt-2">Déploiement de microservices sur Kubernetes.</p>
+              <h3 className="font-medium">Kubernetes & MicroK8s + Traefik</h3>
+              <p className="text-gray-600 text-sm mt-2">Projet MIAGE : DevOps + Sécurité + Cloud</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Kubernetes</span>
                 <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">Docker</span>
@@ -504,11 +441,12 @@ function App() {
                     <div>
                       <h4 className="text-sm font-semibold">Aperçu</h4>
                       <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
-                        <li>Architecture microservices (API, frontend, worker) conteneurisés</li>
-                        <li>Déploiement Kubernetes (Deployments, Services, Ingress)</li>
+                        <li>Cluster MicroK8s avec déploiement de microservices conteneurisés</li>
+                        <li>Exposition services via Traefik avec configuration réseau et certificats</li>
+                        <li>Architecture sécurisée : Deployments, Services, Ingress, secrets/configmaps</li>
                         <li>CI/CD (GitHub Actions) pour build/push images Docker</li>
                         <li>Observabilité (Prometheus/Grafana) et logs centralisés</li>
-                        <li>Scalabilité automatique (HPA) et secrets/configmaps</li>
+                        <li>Scalabilité automatique (HPA) - Rare chez les étudiants → gros plus pour le profil</li>
                       </ul>
                     </div>
                     <div className="md:border-l md:pl-4 relative flex items-center justify-center">
@@ -538,8 +476,8 @@ function App() {
             <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }}>
               <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
-              <h3 className="font-medium">ESXi • VM Ubuntu</h3>
-              <p className="text-gray-600 text-sm mt-2">Virtualisation avec VMware ESXi et déploiement d'une VM Ubuntu.</p>
+              <h3 className="font-medium">ESXi + Ubuntu Secure Lab</h3>
+              <p className="text-gray-600 text-sm mt-2">Projet MIAGE : Cybersécurité + Infra + Virtualisation</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">VMware ESXi</span>
                 <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">Ubuntu</span>
@@ -553,11 +491,12 @@ function App() {
                     <div>
                       <h4 className="text-sm font-semibold">Aperçu</h4>
                       <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
-                        <li>Installation et configuration d'un hyperviseur VMware ESXi</li>
-                        <li>Création d'une VM Ubuntu Server avec ressources dédiées</li>
-                        <li>Configuration réseau (vSwitch, port groups) et accès SSH</li>
-                        <li>Snapshots, templates et bonnes pratiques de gestion</li>
-                        <li>Durcissement sécurité de la VM et mises à jour</li>
+                        <li>Installation et configuration d'un hyperviseur ESXi dans VMware</li>
+                        <li>Création d'une VM Linux Ubuntu Server avec ressources dédiées</li>
+                        <li>Configuration accès distant (SSH / vSphere) et réseau (vSwitch, port groups)</li>
+                        <li>Bonnes pratiques de sécurité : pare-feu, users, updates, snapshots</li>
+                        <li>Durcissement sécurité de la VM et monitoring</li>
+                        <li>Excellent projet MIAGE "SysAdmin + Sécurité"</li>
                       </ul>
                     </div>
                     <div className="md:border-l md:pl-4 relative flex items-center justify-center">
@@ -574,14 +513,158 @@ function App() {
                 </div>
               </div>
             </motion.li>
+            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.8 }}>
+              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="relative z-10">
+                <h3 className="font-medium">Azure Cloud — Networking & VMs</h3>
+                <p className="text-gray-600 text-sm mt-2">Projet MIAGE : Cloud + Architecture SI + Sécurité</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Azure</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">VNet</span>
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">NSG</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">VMSS</span>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
+                <div className="w-[900px] max-w-[95vw] rounded-xl border bg-white shadow-md p-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="text-sm font-semibold">Aperçu</h4>
+                      <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+                        <li>Création et configuration de réseaux virtuels (VNet) sur Azure</li>
+                        <li>Définition de sous-réseaux pour segmentation réseau</li>
+                        <li>Configuration de Network Security Groups (NSG) avec règles de sécurité</li>
+                        <li>Déploiement de Virtual Machine Scale Sets (VMSS)</li>
+                        <li>Tests de connectivité et validation de l'architecture</li>
+                        <li>Bonnes pratiques de sécurité réseau et isolation</li>
+                        <li>Parfait pour montrer maîtrise SI + sécurité réseau</li>
+                      </ul>
+                    </div>
+                    <div className="md:border-l md:pl-4 relative flex items-center justify-center">
+                      <div className="w-full h-80 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/microsoftazure.svg" alt="Azure" className="w-10 h-10" onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjMDA3OEM0Ii8+Cjwvc3ZnPgo='; }} />
+                          </div>
+                          <p className="text-gray-600 font-medium">Azure Cloud Architecture</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.li>
+            </motion.ul>
+          </motion.div>
+
+          {/* Catégorie : Développement Web / SI (MIAGE) */}
+          <motion.div className="mt-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.6 }}>
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">🌐 Développement Web & SI</h3>
+            <motion.ul className="grid grid-cols-1 md:grid-cols-2 gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.7 }}>
+            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.8 }}>
+              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="relative z-10">
+                <h3 className="font-medium">Plateforme de gestion des réparations (Spring MVC)</h3>
+                <p className="text-gray-600 text-sm mt-2">Projet MIAGE : Architecture MVC avec gestion métier</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Spring MVC</span>
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Java</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">MySQL</span>
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Architecture SI</span>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
+                <div className="w-[900px] max-w-[95vw] rounded-xl border bg-white shadow-md p-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="text-sm font-semibold">Aperçu</h4>
+                      <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+                        <li>Architecture MVC complète avec Spring Framework</li>
+                        <li>Gestion des entités métier (clients, réparateurs, propriétaires)</li>
+                        <li>Système de rôles et permissions différenciées</li>
+                        <li>Interface web responsive avec gestion des réparations</li>
+                        <li>Base de données MySQL avec relations complexes</li>
+                        <li>Projet MIAGE typique : gestion processus + SI</li>
+                      </ul>
+                    </div>
+                    <div className="md:border-l md:pl-4 relative flex items-center justify-center">
+                      <div className="w-full h-80 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring MVC" className="w-10 h-10" />
+                          </div>
+                          <p className="text-gray-600 font-medium">Spring MVC Application</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.li>
+            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.9 }}>
+              <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="relative z-10">
+                <h3 className="font-medium">Projet REDAL — Gestion de news (Django)</h3>
+                <p className="text-gray-600 text-sm mt-2">Projet MIAGE : Développement Web + Analyse métier</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Python</span>
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">Django</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">SQLite</span>
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">HTML/CSS</span>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
+                <div className="w-[900px] max-w-[95vw] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="text-sm font-semibold">Aperçu</h4>
+                      <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+                        <li>Projet MIAGE typique : architecture Django complète avec gestion métier</li>
+                        <li>Rôles multiples : client (kiosques), admin, agences avec permissions différenciées</li>
+                        <li>Gestion complète des actualités par agence (Agdal, Ryad, Hassan) avec images</li>
+                        <li>Authentification et inscription sécurisées avec formulaires personnalisés</li>
+                        <li>Base de données SQLite intégrée avec modélisation UML (cas d'utilisation, classes, séquences)</li>
+                        <li>Interface réactive et conviviale, adaptée aux différents supports</li>
+                        <li>Tests fonctionnels (navigation, affichage, gestion CRUD)</li>
+                        <li>Documentation complète et gestion du projet versionnée avec Git</li>
+                        <li>Montre compétences MIAGE : modélisation, gestion SI, analyse métier</li>
+                      </ul>
+                    </div>
+                    <div className="md:border-l md:pl-4 relative flex items-center justify-center">
+                      <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} spaceBetween={12} slidesPerView={1} className="w-full max-w-md">
+                          <SwiperSlide>
+                            <img src="/Screenshot 2024-09-14 130228.png" alt="Redal screenshot 1" className="w-full h-80 object-contain rounded" />
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <img src="/Screenshot 2024-09-14 125831.png" alt="Redal screenshot 2" className="w-full h-80 object-contain rounded" />
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <img src="/Screenshot 2024-09-14 125952.png" alt="Redal screenshot 3" className="w-full h-80 object-contain rounded" />
+                          </SwiperSlide>
+                      </Swiper>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.li>
             
             {/* Additional Projects - Show when expanded */}
             {showAllProjects && (
               <>
-                <li className="group relative border rounded-lg p-4 cursor-pointer">
+                <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.9 }}>
                   <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
                   <div className="relative z-10">
-                    <h3 className="font-medium">Ultrabolic Labs – Site e-commerce fitness</h3>
+                    <h3 className="font-medium">
+                      <a 
+                        href="https://www.ultraboliclabs.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-600 transition-colors"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Ultrabolic Labs – Site e-commerce fitness
+                      </a>
+                    </h3>
                     <p className="text-gray-600 text-sm mt-2">Plateforme e-commerce spécialisée dans le fitness et la nutrition.</p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">React</span>
@@ -606,6 +689,20 @@ function App() {
                             <li>Optimisation SEO et performance pour le référencement</li>
                             <li>Design responsive adapté mobile et desktop</li>
                           </ul>
+                          <div className="mt-4">
+                            <a 
+                              href="https://www.ultraboliclabs.com/" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                              </svg>
+                              Visiter le site
+                            </a>
+                          </div>
                         </div>
                         <div className="md:border-l md:pl-4 relative flex items-center justify-center">
                           <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} spaceBetween={12} slidesPerView={1} className="w-full max-w-md">
@@ -623,9 +720,9 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </li>
+                </motion.li>
 
-                <li className="group relative border rounded-lg p-4 cursor-pointer">
+                <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 1.0 }}>
                   <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
                   <div className="relative z-10">
                     <h3 className="font-medium">AI ChatBot avec React</h3>
@@ -666,9 +763,9 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </li>
+                </motion.li>
 
-                <li className="group relative border rounded-lg p-4 cursor-pointer">
+                <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 1.1 }}>
                   <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
                   <div className="relative z-10">
                     <h3 className="font-medium">Task Manager avec Firebase</h3>
@@ -709,9 +806,9 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </li>
+                </motion.li>
 
-                <li className="group relative border rounded-lg p-4 cursor-pointer">
+                <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 1.2 }}>
                   <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
                   <div className="relative z-10">
                     <h3 className="font-medium">Weather App avec API</h3>
@@ -752,10 +849,11 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </li>
+                </motion.li>
               </>
             )}
-          </motion.ul>
+            </motion.ul>
+          </motion.div>
           
           {/* View All Projects Button */}
           <div className="mt-8 text-center">
@@ -850,6 +948,71 @@ function App() {
                   <h3 className="font-semibold">Programming for Everybody (Getting Started with Python)</h3>
                   <p className="text-sm text-gray-600">University of Michigan</p>
                   <p className="text-xs text-gray-500 mt-1">Mai 2024</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-lg border p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="Cisco" className="w-10 h-10" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Networking Basics</h3>
+                  <p className="text-sm text-gray-600">Cisco</p>
+                  <p className="text-xs text-gray-500 mt-1">2025</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-lg border p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="Cisco" className="w-10 h-10" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Introduction to Cybersecurity</h3>
+                  <p className="text-sm text-gray-600">Cisco</p>
+                  <p className="text-xs text-gray-500 mt-1">2025</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-lg border p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <img src="https://cdn.simpleicons.org/ibm/006699" alt="IBM" className="w-10 h-10" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Machine Learning with Python</h3>
+                  <p className="text-sm text-gray-600">IBM</p>
+                  <p className="text-xs text-gray-500 mt-1">2025</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-lg border p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud" className="w-10 h-10" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Building Scalable Java Microservices with Spring Boot & Cloud</h3>
+                  <p className="text-sm text-gray-600">Google Cloud</p>
+                  <p className="text-xs text-gray-500 mt-1">2025</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-lg border p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" className="w-10 h-10" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Introduction to Containers (Docker, Kubernetes & OpenShift)</h3>
+                  <p className="text-sm text-gray-600">Docker, Kubernetes & OpenShift</p>
+                  <p className="text-xs text-gray-500 mt-1">2025</p>
                 </div>
               </div>
             </a>
