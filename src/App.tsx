@@ -372,7 +372,7 @@ function App() {
             <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
               <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
-              <h3 className="font-medium">Code Quality Analyser (JavaFX + IA)</h3>
+              <h3 className="font-medium">Code Quality Analyser</h3>
               <p className="text-gray-600 text-sm mt-2">Projet MIAGE : Analyse qualité de code avec IA</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-blue-50 text-blue-600 text-xs rounded-full border border-blue-200">React</span>
