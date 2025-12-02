@@ -369,6 +369,7 @@ function App() {
           <motion.div className="mt-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
             <h3 className="text-lg font-semibold text-gray-800 mb-4">🤖 IA & Développement</h3>
             <motion.ul className="grid grid-cols-1 md:grid-cols-2 gap-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }}>
+            {/* Code Quality Analyser */}
             <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
               <div className="absolute inset-0 rounded-lg bg-blue-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
               <div className="relative z-10">
@@ -411,6 +412,94 @@ function App() {
                           </SwiperSlide>
                       </Swiper>
                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.li>
+
+            {/* DLprojet - Deep Learning Project */}
+            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}>
+              <div className="absolute inset-0 rounded-lg bg-purple-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="relative z-10">
+                <h3 className="font-medium">Vehicle Damage Detection – Deep Learning</h3>
+                <p className="text-gray-600 text-sm mt-2">Projet de Deep Learning avec réseaux de neurones pour classification/prévision.</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-purple-50 text-purple-600 text-xs rounded-full border border-purple-200">Python</span>
+                  <span className="px-2 py-1 bg-purple-50 text-purple-600 text-xs rounded-full border border-purple-200">Keras</span>
+                  <span className="px-2 py-1 bg-purple-50 text-purple-600 text-xs rounded-full border border-purple-200">TensorFlow</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">Deep Learning</span>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
+                <div className="w-[900px] max-w-[95vw] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="text-sm font-semibold">Aperçu</h4>
+                      <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+                        <li>Entraînement de réseaux de neurones pour classification de données</li>
+                        <li>Préprocessing des données : normalisation, split train/test, augmentation</li>
+                        <li>Utilisation de Keras/TensorFlow pour définir, entraîner et évaluer le modèle</li>
+                        <li>Suivi des métriques (accuracy, loss, matrices de confusion)</li>
+                        <li>Analyse d’overfitting/underfitting et réglage des hyperparamètres</li>
+                        <li>Rapport expliquant les choix de modélisation et les résultats obtenus</li>
+                      </ul>
+                    </div>
+                    <div className="md:border-l md:pl-4 relative flex items-center justify-center">
+                      <div className="w-full h-80 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7H7m6 4H7m6 4H7m8-8h2a2 2 0 012 2v8a2 2 0 01-2 2h-2M9 7H7a2 2 0 00-2 2v8a2 2 0 002 2h2" />
+                            </svg>
+                          </div>
+                          <p className="text-gray-600 font-medium">Deep Learning Dashboard</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.li>
+
+            {/* DMProjet - Machine Learning / Data Mining */}
+            <motion.li className="group relative border rounded-lg p-4 cursor-pointer" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }}>
+              <div className="absolute inset-0 rounded-lg bg-green-50/60 scale-y-0 origin-bottom transition-transform duration-500 group-hover:scale-y-100 pointer-events-none"></div>
+              <div className="relative z-10">
+                <h3 className="font-medium">Football Player Performance – Machine Learning & Data Mining</h3>
+                <p className="text-gray-600 text-sm mt-2">Projet de Data Mining : préparation de données, modèles ML et analyse des résultats.</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-green-50 text-green-600 text-xs rounded-full border border-green-200">Python</span>
+                  <span className="px-2 py-1 bg-green-50 text-green-600 text-xs rounded-full border border-green-200">scikit-learn</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">Classification</span>
+                  <span className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-full border border-gray-200">Data Mining</span>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute left-0 top-full mt-3 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity z-50">
+                <div className="w-[900px] max-w-[95vw] rounded-2xl border border-white/20 bg-white/70 backdrop-blur-md shadow-lg p-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="text-sm font-semibold">Aperçu</h4>
+                      <ul className="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+                        <li>Exploration et nettoyage d’un dataset réel (valeurs manquantes, outliers)</li>
+                        <li>Extraction de features pertinentes (encodage, normalisation, sélection de variables)</li>
+                        <li>Entraînement de plusieurs modèles (régression logistique, SVM, arbres, etc.)</li>
+                        <li>Évaluation avec précision, rappel, F1-score et courbes ROC/AUC</li>
+                        <li>Comparaison des modèles et choix du meilleur compromis biais/variance</li>
+                        <li>Présentation des résultats via visualisations et rapport synthétique</li>
+                      </ul>
+                    </div>
+                    <div className="md:border-l md:pl-4 relative flex items-center justify-center">
+                      <div className="w-full h-80 bg-gradient-to-br from-emerald-50 to-blue-50 rounded-lg flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                            </svg>
+                          </div>
+                          <p className="text-gray-600 font-medium">Data Mining Insights</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
